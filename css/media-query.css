@@ -1,0 +1,145 @@
+/* for tablet */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  header .navbar {
+    display: none;
+  }
+  .typemaster_keyboard {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 1rem;
+  }
+  .typemaster_keyboard h1 {
+    font-size: 2rem;
+  }
+  .typemaster_keyboard img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .font_icon_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem 1rem;
+  }
+  div .inner {
+    display: none;
+  }
+  .font_icon_content article {
+    width: 250px;
+  }
+  .mechanical_keyboard {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    padding: 0 1rem;
+  }
+  .sub_mechanical_keyboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .sub_mechanical_keyboard img:last-child {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+  .wireless_keyboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 3rem;
+    padding: 0;
+  }
+  .wireless_keyboard h2 {
+    font-size: 1.25rem;
+  }
+  .wireless_keyboard p {
+    width: 100%;
+  }
+}
+/* for mobile */
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  header .navbar {
+    display: none;
+  }
+  .typemaster_keyboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .inner {
+    display: none;
+  }
+  .mechanical_keyboard {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    padding-top: 0;
+  }
+  .sub_mechanical_keyboard {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub_mechanical_keyboard {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+  .wireless_keyboard {
+    padding: 0 1rem;
+    display: flex;
+  }
+  .wireless_keyboard p {
+    padding: 0;
+  }
+
+  .sub_mechanical_keyboard {
+    width: 100%;
+    align-items: center;
+  }
+  .sub_mechanical_keyboard img:last-child {
+    width: 100%;
+    display: block;
+  }
+  .mechanical_keyboard h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  .wireless_keyboard p {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .font_icon_content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .font_icon_content article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .font_icon_content article p {
+    padding: 0;
+  }
+}
